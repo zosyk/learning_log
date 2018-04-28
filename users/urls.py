@@ -11,5 +11,8 @@ urlpatterns = [
     url(r'^login/$', login, {'template_name': 'users/login.html'}, name='login'),
 
     # Logout page
-    url(r'^logout/$', views.logout_view, name='logout')
+    url(r'^logout/$', views.logout_view, name='logout'),
+
+    # Registration page
+    url(r'^register$', views.register, name='register'),
 ]
